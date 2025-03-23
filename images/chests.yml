@@ -1,0 +1,10 @@
+chests:
+  treasure_chest:
+    closed:
+      file: chests/closed_chest.img
+    half_open:
+      file: chests/half_open_chest.img
+    open:
+      file: chests/open_chest.img
+    opening:
+      file: chests/opening_chest.img

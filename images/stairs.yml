@@ -1,0 +1,4 @@
+stairs:
+  spiral:
+    up: stairs/stairs_spiral_up_full.img
+    down: stairs/stairs_spiral_down_full.img

@@ -1,0 +1,484 @@
+name: castle  
+backgrounds:
+  walls:
+    - brick_large
+    - blank_screen
+    - stars
+  floors:
+    - brick_large
+    - blank_screen
+build:
+  door:
+    name: "Door"
+    id: "door"
+    type: "build"
+    sub_type: opening
+    map_image: "\u2229"
+    open_map_image: null 
+    screen_image_options: 
+      - [round_top_wood, [10, 60], 0]
+    screen_position: [10, 60]
+    blocking_image_options: []
+    blocking_image_position: null 
+    solid: False 
+    pass_with: []
+    opens_to: null 
+    directions: ["north", "south", "east", "west"]
+    weight: 5
+    strength: null
+  locked_door:
+    name: "Locked Door"
+    id: "locked_door"
+    type: "build"
+    sub_type: blocked_opening  
+    map_image: "\u25D8"
+    open_map_image: "\u2229"
+    screen_image_options:
+      - [iron_solid, [10, 60], 0]
+      - [round_top_wood, [10, 60], 0]
+    screen_position: [10, 60]
+    blocking_image_options:
+      - [key_lock_1, [29, 87], 1]
+    blocking_image_position: null 
+    solid: True 
+    pass_with: ["key_1"]
+    opens_to: "door"
+    directions: ["north", "south", "east", "west"]
+    weight: 3
+    strength: null
+  blocked_door:
+    name: "Pile of Rocks"
+    id: "blocked_door"
+    type: "build"
+    sub_type: blocked_opening  
+    map_image: "\u2663"
+    open_map_image: ""
+    screen_image_options:
+      - [hole_in_wall, [10, 60], 0]
+    screen_position: [10, 60]
+    blocking_image_options:
+      - [boulders_stacked, [10,60], 1]
+    blocking_image_position: [10, 60]
+    solid: True 
+    pass_with: ["bomb", "pickaxe"]
+    opens_to: "door"
+    directions: ["north", "south", "east", "west"]
+    weight: 3
+    strength: 20 
+  upstairs:
+    name: "Upstairs"
+    id: "upstairs"
+    type: "build"
+    sub_type: up_opening  
+    map_image: "\u2261"
+    open_map_image: null 
+    screen_image_options: 
+      - [spiral, [0, 120], 3]
+    screen_position: [0, 120]
+    blocking_image_options: []
+    blocking_image_position: null 
+    solid: False 
+    pass_with: []
+    opens_to: null 
+    directions: ["up"]
+    weight: 2
+    strength: null 
+  downstairs:
+    name: "Downstairs"
+    id: "downstairs"
+    type: "build"
+    sub_type: down_opening  
+    map_image: "\u2261"
+    open_map_image: null 
+    screen_image_options: 
+      - [spiral, [21, 119], 0]
+    screen_position: [21, 119]
+    blocking_image_options: []
+    blocking_image_position: null 
+    solid: False 
+    pass_with: []
+    opens_to: null 
+    directions: ["down"]
+    weight: 2
+    strength: null 
+  secret_door:
+    name: "Secret Door"
+    id: "secret_door"
+    type: "build"
+    sub_type: blocked_opening  
+    map_image: null
+    open_map_image: null 
+    screen_image_options: [] 
+    screen_position: [10, 60]
+    blocking_image_options: []
+    blocking_image_position: null 
+    solid: False 
+    pass_with: [action]
+    opens_to: "door" 
+    directions: ["north", "south", "east", "west"]
+    weight: 1
+    strength: null 
+  wall:
+    name: "Wall"
+    id: "wall"
+    type: "build"
+    sub_type: blocked  
+    screen_image_options: [] 
+    blocking_image_options: []
+    north:
+      map_image: "\u2580"
+    south:
+      map_image: "\u2584"
+    east:
+      map_image: "\u2590"
+    west:
+      map_image: "\u258C"
+    weight: 15
+    solid: True
+    pass_with: ["powerful_bomb", "pickaxe"]
+    opens_to: "door" 
+    directions: ["north", "south", "east", "west"]
+    strength: 200
+  entrance_door:
+    name: Castle Entrance
+    id: entrance_door
+    type: build
+    sub_type: opening
+    map_image: ⌂
+    open_map_image: null 
+    screen_image_options: 
+        #- [round_top_wood, [10, 60], 0]
+        - [iron_gate, [20, 40], 0]
+        - [iron_gate_brick, [15, 20], 4]
+    screen_position: [10, 60]
+    blocking_image_options: []
+        # - [iron_gate, [20, 40], 0]
+        #- [iron_gate_brick, [15, 20], 0]
+    blocking_image_position: null 
+    solid: False 
+    pass_with: []
+    opens_to: null 
+    directions: [north]
+    weight: 5
+    strength: null
+  entrance_wall:
+    name: Castle Courtyard
+    id: entrance_wall
+    type: build
+    sub_type: blocked  
+    screen_image_options: 
+     - [winter_tree_1, [0, 50], 0] 
+    blocking_image_options: []
+    north:
+      map_image: ⯭
+    south:
+      map_image: ⯭
+    east:
+      map_image: ↠
+    west:
+      map_image: ↞
+    weight: 0
+    solid: True
+    pass_with: []
+    opens_to: null 
+    directions: [north, south, east, west]
+    strength: null
+  floor:
+    name: "Floor"
+    id: "floor"
+    type: "build"
+    sub_type: floor  
+    map_image: "\u2000"
+    screen_image_options: [] 
+    blocking_image_options: []
+    solid: True
+    pass_with: []
+    opens_to: null 
+    directions: ["up", "down"]
+    weight: 15
+    strength: null 
+chests:
+    key_chest:
+      name: "Key Chest"
+      id: "key_chest"
+      type: "chests"
+      map_image: "\u25AC"
+      image_empty: "\u2610"
+      image_open: "\u259A"
+      screen_image: treasure_chest
+      position: [30, 0]
+      opens_with: 'key'
+      item_types: ["weapons", "items", "armor", "food", "tools", "money"]
+      weight: 1
+      #combination: "find combo in room"
+      #riddle: "set list"
+npcs:
+  wizard:
+    name: Tim
+    id: wizard
+    type: npcs
+    screen_image: [wizard_cauldron, [20, 60], 5]
+    position: [20, 60]
+    item_types: []
+    weight: 1
+  witch:
+    name: Broom Hilda 
+    id: witch
+    type: npcs
+    screen_image: [witch_cauldron, [25, 60], 5]
+    position: [20, 60]
+    item_types: []
+    weight: 1
+room_themes:
+  default:
+    name: Castle Room
+    description: "A normal looking room"
+    id: default
+    type: room_themes
+    map_image: null 
+    wall_config: wall
+    item_types: [food, items, tools, keys]
+    chests: [key_chest]
+    npcs: []
+    weight: 50
+    max_uses: null
+    directions:
+      default:
+        # Must have at least 1 door/wall type and 1 upstairs/downstairs/floor type
+        builds:
+          - door
+          - locked_door
+          - blocked_door
+          - upstairs
+          - downstairs
+          - secret_door
+          - floor
+          - wall
+        walls:
+          - brick_large 
+        floors:
+          - brick_large
+        screen_locations:
+          # mapping to file in all_images.yml, [file_mapping, (x,y) pos, layer_level]
+          top_left:
+            - [painting_sailboat, [10, 10], 0]
+          top_center: []
+          top_right:
+            - [painting_sailboat, [10, 120], 0]
+          bottom_left:
+            - [work_bench, [28, 0], 1]
+            - [boulders_stacked, [10, 0], 2]
+            - [rocks_on_ground, [35, 0], 2]
+            - [bookshelf, [13, 0], 1]
+          bottom_center:
+            - [bookshelf, [13, 55], 1]
+            - [rocks_on_ground, [35, 60], 2]
+          bottom_right:
+            - [rocks_on_ground, [35, 100], 2]
+            - [bookshelf, [13, 109], 1]
+            - [boulders_stacked, [10, 102], 2]
+            - [telescope, [30, 120], 4]
+          foreground: []
+  entrance:
+    name: Castle Entrance
+    description: Welcome to The Castle! We are so pleased you've chosen here for your final resting place!
+    id: entrance
+    type: room_themes
+    map_image: α 
+    wall_config: entrance_wall
+    item_types: []
+    chests: []
+    npcs: []
+    weight: 0
+    max_uses: 1
+    directions:
+      default: 
+        builds:
+          - floor
+          - door
+          - entrance_wall
+        walls:
+          - stars 
+        floors:
+          - dirt 
+        screen_locations:
+          # mapping to file in all_images.yml, [file_mapping, (x,y) pos, layer_level]
+          top_left: 
+            - [winter_tree_1, [10, 0], 3]
+            - [winter_tree_1, [10, 10], 3]
+            - [winter_tree_4, [10, 0], 3]
+            - [winter_tree_4, [10, 10], 3]
+              #- [winter_tree_2, [10, 0], 3]
+          top_center:
+            - [winter_tree_3, [5, 50], 1]
+            - [winter_tree_3, [10, 40], 1]
+            - [winter_tree_4, [5, 50], 1]
+            - [winter_tree_4, [10, 40], 1]
+          top_right:
+            - [winter_tree_1, [0, 100], 2]
+            - [winter_tree_1, [0, 90], 2]
+            - [winter_tree_3, [10, 80], 1]
+            - [winter_tree_4, [5, 90], 1]
+          bottom_left:
+            - [winter_tree_1, [20, -20], 4]
+            - [winter_tree_1, [20, -10], 4]
+              #- [winter_tree_2, [20, -20], 4]
+          bottom_center: 
+            - [winter_tree_1, [20, 90], 4]
+            - [winter_tree_1, [20, 75], 4]
+              #- [winter_tree_2, [20, 90], 4]
+          bottom_right: 
+            - [winter_tree_1, [0, 120], 2]
+            - [winter_tree_1, [5, 120], 2]
+              #- [winter_tree_2, [0, 120], 2]
+          foreground:
+            #- [winter_tree_1, [0, 120], 2]
+              #- [winter_tree_2, [0, 120], 2]
+      north: 
+        builds:
+          - entrance_door
+        walls:
+          - stars 
+        floors:
+          - brick_large
+        screen_locations:
+          # mapping to file in all_images.yml, [file_mapping, (x,y) pos, layer_level]
+          top_left: 
+            - [winter_tree_1, [10, 0], 3]
+          top_center: 
+            - [castle_1, [0, 50], 0]
+          top_right:
+            - [winter_tree_1, [0, 100], 2]
+          bottom_left:
+            - [winter_tree_1, [20, -20], 5]
+          bottom_center: []
+            #- [iron_gate, [20, 40], 3]
+            #- [iron_gate_brick, [15, 20], 4]
+          bottom_right: 
+            - [winter_tree_1, [0, 120], 2]
+          foreground: []
+  wizards_study:
+    name: The Grand Wizards Study
+    description: The room is full of odd looking symbols and gadgets. The Grand Wizard himself stares at you from the middle of the room.
+    id: wizards_study 
+    type: room_themes
+    map_image: ⌠
+    wall_config: wall
+    item_types: []
+    chests: []
+    npcs: [wizard]
+    weight: 100
+    max_uses: 1
+    directions:
+      default: 
+        builds:
+          - door
+          - locked_door
+          - blocked_door
+          - upstairs
+          - downstairs
+          - secret_door
+          - floor
+          - wall
+        walls:
+          - brick_large 
+        floors:
+          - brick_large
+        screen_locations:
+          top_left:
+            - [baphomet, [5, 0], 0]
+          top_center: []
+          top_right:
+            - [baphomet, [5, 86], 0]
+          bottom_left:
+            - [work_bench, [28, 0], 1]
+          bottom_center:
+            - [bookshelf, [13, 55], 1]
+          bottom_right:
+            - [telescope, [30, 120], 4]
+          foreground: []
+  hags_haven:
+    name: The Hag's Haven 
+    description: An old woman stands in the middle of the room cooking.... Is that an eyeball in the stew?
+    id: hags_haven 
+    type: room_themes
+    map_image: δ
+    wall_config: wall
+    item_types: []
+    chests: []
+    npcs: [witch]
+    weight: 100
+    max_uses: 1
+    directions:
+      default: 
+        builds:
+          - door
+          - locked_door
+          - blocked_door
+          - upstairs
+          - downstairs
+          - secret_door
+          - floor
+          - wall
+        walls:
+          - brick_large 
+        floors:
+          - brick_large
+        screen_locations:
+          top_left:
+            - [baphomet, [5, 0], 0]
+          top_center: []
+          top_right:
+            - [baphomet, [5, 86], 0]
+          bottom_left:
+          bottom_center:
+            - [bookshelf, [13, 55], 1]
+          bottom_right:
+            - [telescope, [30, 120], 4]
+          foreground: []
+  armory:
+    name: Castle Armory
+    description: Maybe you can find something useful here!
+    id: armory
+    type: room_themes
+    map_image: ⚔
+    wall_config: wall
+    item_types: [armor, weapons]
+    chests: []
+    npcs: []
+    weight: 50
+    max_uses: 3
+    directions:
+      default:
+        builds:
+          - door
+          - locked_door
+          - blocked_door
+          - upstairs
+          - downstairs
+          - secret_door
+          - floor
+          - wall
+        walls:
+          - brick_large 
+        floors:
+          - brick_large
+        screen_locations:
+          top_left:
+            - [wall_shield_1, [5, 20], 1]
+          top_center: []
+          top_right:
+            - [wall_shield_1, [5, 105], 1]
+          bottom_left:
+            - [knight_halberd, [22, 10], 1]
+            - [knight_armor, [22, 15], 1]
+            - [knight_shield, [22, 10], 1]
+          bottom_center:
+            - [knight_halberd, [22, 60], 1]
+            - [knight_armor, [22, 65], 1]
+            - [knight_shield, [22, 60], 1]
+          bottom_right:
+            - [knight_halberd, [22, 105], 1]
+            - [knight_shield, [22, 105], 1]
+            - [knight_armor, [22, 110], 1]
+          foreground: []

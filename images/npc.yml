@@ -1,0 +1,5 @@
+npc:
+  witch_cauldron:
+    file: npc/witch_full.img
+  wizard_cauldron:
+    file: npc/wizard_cauldron.img

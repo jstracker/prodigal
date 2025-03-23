@@ -1,0 +1,23 @@
+background_decor:
+  boulders_stacked:
+    file: background_decor/boulders_stacked.img
+    transparencies:
+  painting_sailboat:
+    file: background_decor/painting_boat.img
+    transparencies:
+  rocks_on_ground:
+    file: background_decor/rocks_on_ground.img
+    transparencies:
+  bat:
+    file: background_decor/bat.img
+    transparencies:
+  rat:
+    file: background_decor/rat.img
+    transparencies:
+  baphomet:
+    file: background_decor/baphomet.img
+    transparencies:
+      - baphomet_transparent.img
+  bookshelf:
+    file: background_decor/bookshelf_1.img
+    transparencies:

@@ -1,0 +1,10 @@
+backgrounds:
+  blank_screen:
+    full: backgrounds/blank_screen_full.img
+    small: backgrounds/blank_screen_small.img
+  brick_large:
+    full: file: backgrounds/brick_wall_full.img
+    small: backgrounds/brick_wall_small.im
+  brick_small:
+    full:
+    small:

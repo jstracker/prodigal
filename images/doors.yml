@@ -1,0 +1,10 @@
+doors:
+  round_top_wood:
+    closed: doors/castle_door_full.img
+    open: doors/castle_door_full.img
+  iron_solid:
+    closed: doors/iron_door_full.img
+    open: doors/iron_door_open_full.img
+  hole_in_wall:
+    closed: doors/hole_in_wall_full.img
+    open: doors/hole_in_wall_full.img

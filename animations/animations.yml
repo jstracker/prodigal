@@ -1,0 +1,95 @@
+wall_explosion:
+  frame_times:
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+  frames:
+  - background
+  - tiny_explosion
+  - small_explosion
+  - small_explosion
+  - small_explosion
+  - small_explosion
+  - small_explosion
+  - big_explosion
+  positions:
+    - [0, 0]
+    - [20, 30]
+    - [20, 25]
+    - [70, 40]
+    - [40, 80]
+    - [30, 40]
+    - [15, 80]
+    - [15, 40]
+unlock_chest:
+  frame_times:
+    - 1
+    - 0.5
+    - 0.5
+    - 1
+  frames:
+    - closed_chest
+    - opening_chest
+    - half_open_chest
+    - open_chest
+  positions:
+    - [2, 4]
+    - [2, 4]
+    - [2, 4]
+    - [2, 4]
+iron_gate_brick:
+  frame_times:
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 2
+  frames:
+    #- iron_gate_brick_closed
+    #- iron_gate_brick_opening_1
+    #- iron_gate_brick_opening_2
+    #- iron_gate_brick_opening_3
+    #- iron_gate_brick_opening_4
+    #- iron_gate_brick_opening_5
+    #- iron_gate_brick_open
+    - closed
+    - opening_1
+    - opening_2
+    - opening_3
+    - opening_4
+    - opening_5
+    - open
+  positions:
+    - [15, 20]
+    - [15, 20]
+    - [15, 20]
+    - [15, 20]
+    - [15, 20]
+    - [15, 20]
+    - [15, 20]
+iron_gate:
+  frame_times:
+    - 0.5
+    - 0.5
+    - 0.5
+    - 0.5
+    - 2.0
+  frames:
+    - closed
+    - opening_1
+    - opening_2
+    - opening_3
+    - open
+  positions:
+    - [20, 40]
+    - [20, 40]
+    - [20, 40]
+    - [20, 40]
+    - [20, 40]

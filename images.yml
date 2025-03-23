@@ -1,0 +1,77 @@
+overlays:
+  stacked_boulders_overlay:
+    files: [boulders_stacked.img]
+    positions: [(30, 90), (30, 70), (30, 60), (20, 80), (20, 65), (10, 70)]
+  witch_with_bat:
+    files: [witch_full.img, bat.img]
+    positions: [[20, 60], [20, 100]]
+structure_images:
+  stacked_boulders:
+    file: boulders_stacked.img
+    positions:
+      north: [10, 60]
+      south: [10, 60]
+      east: [10, 60]
+      west: [10, 60]
+  stairs_spiral_up_full:
+    file: stairs_spiral_up_full.img
+    positions:
+      north: [0, 120]
+      east: []
+  stairs_spiral_down_full:
+    file: stairs_spiral_down_full.img
+    positions:
+      south: []
+      east: [21, 119]
+  castle_door_full:
+    file: castle_door_full.img
+    position: [10, 60]
+  iron_door_full:
+    file: iron_door_full.img
+    position: [10, 60]
+  hole_in_wall_full:
+    file: hole_in_wall_full.img
+    position: [10, 60]
+  closed_chest:
+    file: closed_chest.img
+    position: [30,0]
+  opening_chest:
+    file: closed_chest.img
+    position: [2,4]
+  half_open_chest:
+    file: closed_chest.img
+    position: [2,4]
+  open_chest:
+    file: closed_chest.img
+    position: [2,4]
+character_images:
+  witch_full:
+    file: witch_full.img
+    position: [20, 60]
+images:
+  bat:
+    file: bat.img
+  closed_chest:
+    file: closed_chest.img
+    position: [30,0]
+  opening_chest:
+    file: opening_chest.img
+    position: [2,4]
+  half_open_chest:
+    file: half_open_chest.img
+    position: [2,4]
+  open_chest:
+    file: open_chest.img
+    position: [2,4]
+  tiny_explosion:
+    file: tiny_explosion.img
+    solid: False
+  small_explosion:
+    file: small_explosion.img
+    solid: False
+  big_explosion:
+    file: big_explosion.img
+    solid: False
+backgrounds:
+  brick_wall_full:
+    file: brick_wall_full.img

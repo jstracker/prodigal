@@ -1,0 +1,5 @@
+room_objects:
+  work_bench:
+    file: room_objects/work_table.img
+  telescope:
+    file: room_objects/telescope.img

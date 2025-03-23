@@ -1,0 +1,8 @@
+floors:
+  brick_large:
+    full:
+      vertical_view: floors/brick_floor_vertical.img
+      horizontal_view: floors/brick_floor_horizontal.img
+    small:
+      vertical_view:
+      horizontal_view:

@@ -1,0 +1,123 @@
+castle:
+  build:
+    door:
+      name: "Door"
+      id: "door"
+      type: "build"
+      image: "\u2229"
+      screen_image: [castle_door_full.img]
+      screen_position: [10, 60]
+      solid: False 
+      pass_with: []
+      opens_to: None 
+      directions: ["north", "south", "east", "west"]
+      weight: 5
+      strength: None
+    locked_door:
+      name: "Locked Door"
+      id: "locked_door"
+      type: "build"
+      image: "\u25D8"
+      screen_image: [iron_door_full.img]
+      screen_position: [10, 60]
+      solid: True 
+      pass_with: ["key_1"]
+      opens_to: "door"
+      directions: ["north", "south", "east", "west"]
+      weight: 3
+      strength: None
+    blocked_door:
+      name: "Pile of Rocks"
+      id: "blocked_door"
+      type: "build"
+      image: "\u2663"
+      screen_image: [hole_in_wall_full.img, boulders_stacked.img]
+      screen_position: [10, 60]
+      solid: True 
+      pass_with: ["bomb", "pickaxe"]
+      opens_to: "door"
+      directions: ["north", "south", "east", "west"]
+      weight: 3
+      strength: 20 
+    upstairs:
+      name: "Upstairs"
+      id: "upstairs"
+      type: "build"
+      image: "\u2261"
+      screen_image: [stairs_spiral_up_full.img]
+      screen_position: [0, 120]
+      solid: False 
+      pass_with: []
+      opens_to: None 
+      directions: ["up"]
+      weight: 2
+      strength: None 
+    downstairs:
+      name: "Downstairs"
+      id: "downstairs"
+      type: "build"
+      image: "\u2261"
+      screen_image: [stairs_spiral_down_full.img]
+      screen_position: [21, 119]
+      solid: False 
+      pass_with: []
+      opens_to: None 
+      directions: ["down"]
+      weight: 2
+      strength: None 
+    secret_door:
+      name: "Secret Door"
+      id: "secret_door"
+      type: "build"
+      image: None
+      screen_image: [] 
+      screen_position: [10, 60]
+      solid: False 
+      pass_with: []
+      opens_to: "door" 
+      directions: ["north", "south", "east", "west"]
+      weight: 1
+      strength: None 
+    wall:
+      name: "Wall"
+      id: "wall"
+      type: "build"
+      north:
+        image: "\u2580"
+      south:
+        image: "\u2584"
+      east:
+        image: "\u2590"
+      west:
+        image: "\u258C"
+      weight: 15
+      solid: True
+      pass_with: ["powerful_bomb", "pickaxe"]
+      opens_to: "door" 
+      directions: ["north", "south", "east", "west"]
+      strength: 200
+    floor:
+      name: "Floor"
+      id: "floor"
+      type: "build"
+      image: "\u2000"
+      solid: True
+      pass_with: []
+      opens_to: None 
+      directions: ["up", "down"]
+      weight: 15
+      strength: None 
+  chests:
+      key_chest:
+          name: "Key Chest"
+          id: "key_chest"
+          type: "chests"
+          image: "\u25AC"
+          image_empty: "\u2610"
+          image_open: "\u259A"
+          screen_image: [closed_chest.img]
+          opens_with: 'key'
+          item_types: ["weapons", "items", "armor", "food", "tools", "money"]
+          weight: 1
+    
+

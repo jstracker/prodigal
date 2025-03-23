@@ -1,0 +1,63 @@
+backgrounds:
+  blank_screen:
+    full: images/backgrounds/blank_screen_full.img
+    small: images/backgrounds/blank_screen_small.img
+  brick_large:
+    full: images/backgrounds/brick_wall_full.img
+    small: images/backgrounds/brick_wall_small.im
+  brick_small:
+    full:
+    small:
+background_decor:
+  boulders_stacked:
+    file: images/background_decor/boulders_stacked.img
+  painting_sailboat:
+    file: images/background_decor/painting_boat.img
+  rocks_on_ground:
+    file: images/background_decor/rocks_on_ground.img
+  bat:
+    file: images/background_decor/bat.img
+  rat:
+    file: images/background_decor/rat.img
+  baphomet:
+    file: images/background_decor/baphomet.img
+  bookshelf:
+    file: images/background_decor/bookshelf_1.img
+floors:
+  brick_large:
+    full:
+      vertical_view: images/floors/brick_floor_vertical.img
+      horizontal_view: images/floors/brick_floor_horizontal.img
+    small:
+      vertical_view:
+      horizontal_view:
+doors:
+  round_top_wood:
+    closed: images/doors/castle_door_full.img
+    open: images/doors/castle_door_full.img
+  iron_solid:
+    closed: images/doors/iron_door_full.img
+    open: images/doors/iron_door_open_full.img
+  hole_in_wall:
+    closed: images/doors/hole_in_wall_full.img
+    open: images/doors/hole_in_wall_full.img
+stairs:
+  spiral:
+    up: images/stairs/stairs_spiral_up_full.img
+    down: images/stairs/stairs_spiral_down_full.img
+chests:
+  treasure_chest:
+    closed: images/chests/closed_chest.img
+    half_open: images/chests/half_open_chest.img
+    open: images/chests/open_chest.img
+    opening: images/chests/opening_chest.img
+room_objects:
+  work_bench:
+    file: images/room_objects/work_table.img
+  telescope:
+    file: images/room_objects/telescope.img
+npc:
+  witch_cauldron:
+    file: images/npc/witch_full.img
+  wizard_cauldron:
+    file: images/npc/wizard_cauldron.img

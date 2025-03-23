@@ -1,0 +1,26 @@
+frame_times:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+frames:
+  - iron_gate_brick_closed
+  - iron_gate_brick_opening_1
+  - iron_gate_brick_opening_2
+  - iron_gate_brick_opening_3
+  - iron_gate_brick_opening_4
+  - iron_gate_brick_opening_5
+  - iron_gate_brick_open
+positions:
+  - [15, 20]
+  - [15, 20]
+  - [15, 20]
+  - [15, 20]
+  - [15, 20]
+  - [15, 20]
+  - [15, 20]
+
+    [iron_gate_brick, [15, 20], 4]

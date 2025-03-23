@@ -1,0 +1,15 @@
+frame_times:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 1
+frames:
+  - closed_chest
+  - opening_chest
+  - half_open_chest
+  - open_chest
+positions: 
+  - [2, 4]
+  - [2, 4]
+  - [2, 4]
+  - [2, 4]

@@ -1,0 +1,156 @@
+backgrounds:
+  blank_screen:
+    full: images/backgrounds/blank_screen_full.img
+    small: images/backgrounds/blank_screen_small.img
+  stars:
+    full: images/backgrounds/stars_sky_full.img
+    small: null
+  brick_large:
+    full: images/backgrounds/brick_wall_full.img
+    small: images/backgrounds/brick_wall_small.im
+  brick_small:
+    full: null
+    small: null
+  castle_1:
+    full: images/exteriors/castle_1.img
+    small: null
+floors:
+  brick_large:
+    full:
+      vertical_view: images/floors/brick_floor_vertical.img
+      horizontal_view: images/floors/brick_floor_horizontal.img
+    small:
+      vertical_view:
+      horizontal_view:
+  blank_screen:
+    full:
+      vertical_view: images/backgrounds/blank_screen_full.img
+      horizontal_view: images/backgrounds/blank_screen_full.img
+    small:
+      vertical_view: images/backgrounds/blank_screen_small.img
+      horizontal_view: images/backgrounds/blank_screen_small.img
+  dirt:
+    full:
+      vertical_view: images/floors/dirt_full.img
+      horizontal_view: images/floors/dirt_full.img
+    small:
+      vertical_view: null
+      horizontal_view: null
+exteriors:
+  castles:
+    castle_1: images/exteriors/castle_1.img
+gates:
+  iron_gate:
+    closed: images/gates/iron_front_gate.img
+  iron_gate_brick:
+    closed: images/gates/iron_front_gate_brick_closed.img
+    opening_1: images/gates/iron_front_gate_brick_opening_1.img
+    opening_2: images/gates/iron_front_gate_brick_opening_2.img
+    opening_3: images/gates/iron_front_gate_brick_opening_3.img
+    opening_4: images/gates/iron_front_gate_brick_opening_4.img
+    opening_5: images/gates/iron_front_gate_brick_opening_5.img
+    open: images/gates/iron_front_gate_brick_open.img
+doors:
+  round_top_wood:
+    closed: images/doors/castle_door_full.img
+    open: images/doors/castle_door_full.img
+  iron_solid:
+    closed: images/doors/iron_door_full.img
+    open: images/doors/iron_door_open_full.img
+  hole_in_wall:
+    closed: images/doors/hole_in_wall_full.img
+    open: images/doors/hole_in_wall_full.img
+  iron_gate:
+    closed: images/gates/iron_front_gate_closed.img
+    opening_1: images/gates/iron_front_gate_opening_1.img
+    opening_2: images/gates/iron_front_gate_opening_2.img
+    opening_3: images/gates/iron_front_gate_opening_3.img
+    open: images/gates/iron_front_gate_open.img
+  iron_gate_brick:
+    closed: images/gates/iron_front_gate_brick_closed.img
+    opening_1: images/gates/iron_front_gate_brick_opening_1.img
+    opening_2: images/gates/iron_front_gate_brick_opening_2.img
+    opening_3: images/gates/iron_front_gate_brick_opening_3.img
+    opening_4: images/gates/iron_front_gate_brick_opening_4.img
+    opening_5: images/gates/iron_front_gate_brick_opening_5.img
+    open: images/gates/iron_front_gate_brick_open.img
+blockers:
+  key_lock_1:
+    closed: images/background_decor/key_lock_closed_1.img
+    half_open: images/background_decor/key_lock_half_open_1.img
+    open: images/background_decor/key_lock_open_1.img
+  boulders_stacked:
+    closed: images/background_decor/boulders_stacked.img
+    half_open: null
+    open: null
+stairs:
+  spiral:
+    up: images/stairs/stairs_spiral_up_full.img
+    down: images/stairs/stairs_spiral_down_full.img
+chests:
+  treasure_chest:
+    closed: images/chests/closed_chest.img
+    half_open: images/chests/half_open_chest.img
+    open: images/chests/open_chest.img
+    opening: images/chests/opening_chest.img
+#npc
+witch_cauldron:
+  file: images/npc/witch_full.img
+wizard_cauldron:
+  file: images/npc/wizard_cauldron.img
+#background_decor:
+castle_1:
+  file: images/exteriors/castle_1.img
+iron_gate:
+  file: images/gates/iron_front_gate.img
+iron_gate_brick_closed:
+  file: images/gates/iron_front_gate_brick_closed.img
+iron_gate_brick_opening_1: 
+  file:images/gates/iron_front_gate_brick_opening_1.img
+iron_gate_brick_opening_2:
+  file: images/gates/iron_front_gate_brick_opening_2.img
+iron_gate_brick_opening_3:
+  file: images/gates/iron_front_gate_brick_opening_3.img
+iron_gate_brick_opening_4:
+  file: images/gates/iron_front_gate_brick_opening_4.img
+iron_gate_brick_opening_5:
+  file: images/gates/iron_front_gate_brick_opening_5.img
+iron_gate_brick_open:
+  file: images/gates/iron_front_gate_brick_open.img
+boulders_stacked:
+  file: images/background_decor/boulders_stacked.img
+key_lock_closed_1:
+  file: images/background_decor/key_lock_closed_1.img
+winter_tree_1:
+  file: images/background_decor/winter_tree_1.img
+winter_tree_2:
+  file: images/trees/winter_tree_2.img
+winter_tree_3:
+  file: images/trees/winter_tree_3.img
+winter_tree_4:
+  file: images/trees/winter_tree_4.img
+painting_sailboat:
+  file: images/background_decor/painting_boat.img
+rocks_on_ground:
+  file: images/background_decor/rocks_on_ground.img
+bat:
+  file: images/background_decor/bat.img
+rat:
+  file: images/background_decor/rat.img
+baphomet:
+  file: images/background_decor/baphomet.img
+bookshelf:
+  file: images/background_decor/bookshelf_1.img
+knight_halberd:
+  file: images/background_decor/knight_halberd.img
+knight_armor:
+  file: images/background_decor/knight_armor.img
+knight_shield:
+  file: images/background_decor/knight_shield.img
+wall_shield_1:
+  file: images/background_decor/shield_wall_decor_1.img
+#room_objects
+work_bench:
+  file: images/room_objects/work_table.img
+telescope:
+  file: images/room_objects/telescope.img

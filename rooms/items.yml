@@ -1,0 +1,243 @@
+keys:
+  key_1:
+    name: Key
+    id: key_1
+    type: keys
+    image: 🗝
+    weight: 5
+    value: 15
+    num: 1
+    max_stack: 25
+items:
+  glass_1:
+    name: Magnifying Glass
+    id: glass_1
+    type: items
+    image: null
+    weight: 5
+    value: 500 
+    durability: null 
+    perception: 10
+    use: perception
+    max_stack: 1
+  rope: 
+    name: Rope
+    id: rope_1
+    type: items
+    image: null
+    weight: 5
+    value: 15
+    durability: 10
+    max_stack: 3 
+  candle: 
+    name: Candle
+    id: candle
+    type: items
+    image: 🕯
+    weight: 5
+    value: 15
+    light: 1
+    use: light
+    durability: 1
+    max_stack: 10 
+food:
+  apple:
+    name: Apple
+    id: apple
+    type: food
+    image: 🍎
+    weight: 10
+    value: 10
+    health: 5 
+    use: health
+    max_stack: 25 
+  meat:
+    name: Meat
+    id: meat
+    type: food
+    image: 🍖
+    weight: 3
+    value: 30 
+    health: 15
+    use: health
+    max_stack: 25
+  bread:
+    name: Bread
+    id: bread
+    type: food
+    image: 🍞
+    weight: 10 
+    value: 5
+    health: 2
+    use: health
+    max_stack: 25
+money:
+  money_1:
+    name: $1
+    id: money_1
+    type: money
+    image: 💰
+    weight: 5
+    amount: 1
+  money_5:
+    name: $5
+    id: money_5
+    type: money
+    image: 💰
+    weight: 5
+    amount: 5
+  money_10:
+    name: $10
+    id: money_10
+    type: money
+    image: 💰
+    weight: 5
+    amount: 10
+  money_25:
+    name: $25
+    id: money_25
+    type: money
+    image: 💰
+    weight: 5
+    amount: 25
+  money_100:
+    name: $100
+    id: money_100
+    type: money
+    image: 💰
+    weight: 5
+    amount: 100
+  money_500:
+    name: $500
+    id: money_500
+    type: money
+    image: 💰
+    weight: 5
+    amount: 500
+weapons:
+  sword_1:
+    name: Sword
+    id: sword_1
+    type: weapons
+    image: 🗡
+    weight: 5
+    value: 100
+    damage: 10
+    durability: 10
+    max_stack: 1
+  knife_1:
+    name: Knife
+    id: knife_1
+    type: weapons
+    image: 🔪 
+    weight: 5
+    value: 50
+    damage: 5   
+    durability: 10
+    max_stack: 1
+  bow_1:
+    name: Bow
+    id: bow_1
+    type: weapons
+    image: 🏹
+    weight: 5
+    value: 50
+    damage: 2 
+    durability: 10
+    max_stack: 1
+  arrow_1:
+    name: Arrow
+    id: arrow_1
+    type: weapons
+    image: ➳
+    weight: 5
+    value: 10
+    damage: 5 
+    durability: 1
+    max_stack: 25
+armor:
+  shield_1:
+    name: Shield
+    id: shield_1
+    type: armor
+    image: ⛨ 
+    weight: 5
+    defense: 10
+    durability: 10
+    max_stack: 1
+  helmet_1:
+    name: Helmet
+    id: helmet_1
+    type: armor
+    image: null 
+    weight: 5
+    defense: 10
+    durability: 10
+    max_stack: 1
+  breastplate_1:
+    name: Breastplate
+    id: breastplate_1
+    type: armor
+    image: null 
+    weight: 5
+    defense: 10
+    durability: 10
+    max_stack: 1
+tools:
+  pickaxe_1:
+    name: Pickaxe
+    id: pickaxe_1
+    type: tools
+    image: ⛏
+    weight: 5
+    damage: 2
+    durability: 10
+    max_stack: 1
+  bomb_1:
+    name: Bomb
+    id: bomb_1
+    type: tools
+    image: 💣 
+    weight: 5
+    damage: 20
+    durability: 0
+    max_stack: 10
+  bomb_2:
+    name: Powerful Bomb
+    id: bomb_2
+    type: tools
+    image: 💣
+    weight: 1 
+    damage: 200
+    durability: 0
+    max_stack: 10
+objects:
+  lock:
+    image: 🔒
+    image2: 🔓 
+  telescope:
+    image: 🔭
+  crossbones:
+    image: 🕱 
+  bat:
+    image: 🦇 
+  bed:
+    image: 🛏
+  ladder:
+    image: 🪜
+  door:
+    image: 🚪
+  bricks:
+    image: 🧱
+  web:
+    image: 🕸
+  spider:
+    image: 🕷
+  rock_pile:
+    image: ♣
+  trees:
+    - 🌲
+    - 🌳\
+  skull:
+    - 💀
+
